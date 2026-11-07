@@ -1,0 +1,6 @@
+{
+  "name": "TERU PERFUME — Luxury Fragrance Boutique",
+  "description": "Exclusive boutique in Addis Ababa offering 100% original designer, niche, and Arabic perfumes with nationwide delivery across Ethiopia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
