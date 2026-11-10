@@ -15,6 +15,7 @@ import {
   Edit2,
   X,
 } from 'lucide-react';
+import { IMAGES, resolveFragranceImage } from '../assets/images';
 
 interface FeaturedProductsProps {
   products: FragranceProduct[];
@@ -114,7 +115,7 @@ export const FeaturedProducts: React.FC<FeaturedProductsProps> = ({
         category: editingProduct.category || 'luxury',
         bottleSize: editingProduct.bottleSize || '100ml',
         priceETB: Number(editingProduct.priceETB),
-        image: editingProduct.image || '/src/assets/images/hero_luxury_perfume_1794041956636.jpg',
+        image: editingProduct.image || IMAGES.heroLuxuryPerfume,
         description: editingProduct.description || 'Exclusive luxury perfume available at TERU PERFUME.',
         topNotes: editingProduct.topNotes || ['Bergamot', 'Citrus'],
         heartNotes: editingProduct.heartNotes || ['Floral Notes', 'Cedar'],
@@ -169,7 +170,7 @@ export const FeaturedProducts: React.FC<FeaturedProductsProps> = ({
                 category: 'designer',
                 bottleSize: '100ml',
                 priceETB: 12000,
-                image: '/src/assets/images/collection_designer_1794041957272.jpg',
+                image: IMAGES.collectionDesigner,
                 description: '',
                 topNotes: [],
                 heartNotes: [],
@@ -278,7 +279,7 @@ export const FeaturedProducts: React.FC<FeaturedProductsProps> = ({
                   {/* Top Image Frame */}
                   <div className="relative aspect-4/3 overflow-hidden bg-[#F8F4EB]">
                     <img
-                      src={product.image}
+                      src={resolveFragranceImage(product.image)}
                       alt={product.name}
                       className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
                       loading="lazy"

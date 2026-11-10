@@ -2,6 +2,7 @@ import React from 'react';
 import { Language } from '../types';
 import { translations } from '../data/translations';
 import { MapPin, Clock, Sparkles } from 'lucide-react';
+import { IMAGES } from '../assets/images';
 
 interface AboutSectionProps {
   lang: Language;
@@ -74,7 +75,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ lang }) => {
             <div className="relative mx-auto max-w-lg lg:max-w-none">
               <div className="rounded-xl overflow-hidden border border-[#E9DFCF] bg-[#F8F4EB] shadow-lg aspect-4/3">
                 <img
-                  src="/src/assets/images/collection_niche_1794041958178.jpg"
+                  src={IMAGES.collectionNiche}
                   alt="TERU PERFUME boutique showcase in Bole Addis Ababa"
                   className="w-full h-full object-cover object-center"
                   loading="lazy"

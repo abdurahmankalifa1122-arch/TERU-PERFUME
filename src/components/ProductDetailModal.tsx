@@ -3,6 +3,7 @@ import { FragranceProduct, Language, WhatsAppNumberOption } from '../types';
 import { translations } from '../data/translations';
 import { formatETB, generateWhatsAppSingleProductUrl } from '../utils/cart';
 import { X, MessageSquare, ShoppingBag, ShieldCheck, Sparkles } from 'lucide-react';
+import { resolveFragranceImage } from '../assets/images';
 
 interface ProductDetailModalProps {
   product: FragranceProduct | null;
@@ -57,7 +58,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
           {/* Image Column */}
           <div className="relative aspect-4/3 md:aspect-auto md:h-full bg-[#F8F4EB] overflow-hidden">
             <img
-              src={product.image}
+              src={resolveFragranceImage(product.image)}
               alt={product.name}
               className="w-full h-full object-cover object-center"
               referrerPolicy="no-referrer"

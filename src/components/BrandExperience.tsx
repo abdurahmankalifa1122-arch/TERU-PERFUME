@@ -2,6 +2,7 @@ import React from 'react';
 import { Language } from '../types';
 import { translations } from '../data/translations';
 import { ArrowUpRight } from 'lucide-react';
+import { IMAGES } from '../assets/images';
 
 interface BrandExperienceProps {
   lang: Language;
@@ -19,7 +20,7 @@ export const BrandExperience: React.FC<BrandExperienceProps> = ({ lang }) => {
           <div className="lg:col-span-7 relative">
             <div className="relative rounded-xl overflow-hidden border border-[#E9DFCF] bg-[#F8F4EB] shadow-xl aspect-16/10 sm:aspect-16/11">
               <img
-                src="/src/assets/images/editorial_craft_1794041957745.jpg"
+                src={IMAGES.editorialCraft}
                 alt="Art of fine fragrance crafting with oud wood, petals, and crystal flacon"
                 className="w-full h-full object-cover object-center transform hover:scale-103 transition-transform duration-700 ease-out"
                 loading="lazy"

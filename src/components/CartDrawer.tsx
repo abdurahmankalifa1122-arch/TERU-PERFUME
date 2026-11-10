@@ -8,6 +8,7 @@ import {
   generateWhatsAppOrderUrl,
 } from '../utils/cart';
 import { X, Trash2, Plus, Minus, MessageSquare, ShoppingBag, ArrowRight } from 'lucide-react';
+import { resolveFragranceImage } from '../assets/images';
 
 interface CartDrawerProps {
   isOpen: boolean;
@@ -145,7 +146,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                         className="p-3.5 rounded-lg bg-[#F8F4EB] border border-[#E9DFCF] flex gap-3.5 items-center"
                       >
                         <img
-                          src={item.product.image}
+                          src={resolveFragranceImage(item.product.image)}
                           alt={item.product.name}
                           className="w-16 h-16 object-cover rounded bg-[#FFFDF8] shrink-0 border border-[#E9DFCF]"
                           referrerPolicy="no-referrer"

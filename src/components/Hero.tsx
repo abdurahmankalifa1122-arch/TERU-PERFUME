@@ -2,6 +2,7 @@ import React from 'react';
 import { Language } from '../types';
 import { translations } from '../data/translations';
 import { ArrowUpRight, ShieldCheck, MapPin, Sparkles } from 'lucide-react';
+import { IMAGES } from '../assets/images';
 
 interface HeroProps {
   lang: Language;
@@ -77,7 +78,7 @@ export const Hero: React.FC<HeroProps> = ({ lang }) => {
               {/* Main image container */}
               <div className="relative rounded-xl overflow-hidden border border-[#E9DFCF] bg-[#FFFDF8] shadow-xl aspect-16/10 sm:aspect-16/11 lg:aspect-4/3">
                 <img
-                  src="/src/assets/images/hero_luxury_perfume_1794041956636.jpg"
+                  src={IMAGES.heroLuxuryPerfume}
                   alt="TERU PERFUME luxury flacon on warm cream travertine"
                   className="w-full h-full object-cover object-center transform hover:scale-103 transition-transform duration-700 ease-out"
                   loading="eager"

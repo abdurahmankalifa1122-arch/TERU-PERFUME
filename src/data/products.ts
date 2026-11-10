@@ -1,4 +1,5 @@
 import { FragranceProduct } from '../types';
+import { IMAGES } from '../assets/images';
 
 export const initialProducts: FragranceProduct[] = [
   {
@@ -9,7 +10,7 @@ export const initialProducts: FragranceProduct[] = [
     category: 'luxury',
     bottleSize: '70ml',
     priceETB: 32000,
-    image: '/src/assets/images/perfume_rouge_crystal_1794041988691.jpg',
+    image: IMAGES.perfumeRougeCrystal,
     description:
       'An iconic, luminous fragrance radiating woody amber and crystalline floral facets with incredible sillage.',
     descriptionAm:
@@ -28,7 +29,7 @@ export const initialProducts: FragranceProduct[] = [
     category: 'niche',
     bottleSize: '100ml',
     priceETB: 29500,
-    image: '/src/assets/images/perfume_regal_black_1794041989060.jpg',
+    image: IMAGES.perfumeRegalBlack,
     description:
       'Celebrated for its bold, magnetic blend of crisp bergamot, smoky birch, and succulent blackcurrant.',
     descriptionAm:
@@ -47,7 +48,7 @@ export const initialProducts: FragranceProduct[] = [
     category: 'arabic',
     bottleSize: '100ml',
     priceETB: 7800,
-    image: '/src/assets/images/perfume_arabic_khamrah_1794041989513.jpg',
+    image: IMAGES.perfumeArabicKhamrah,
     description:
       'A warm oriental gourmand masterpiece with sweet dates, cinnamon, praline, and creamy vanilla.',
     descriptionAm:
@@ -66,7 +67,7 @@ export const initialProducts: FragranceProduct[] = [
     category: 'luxury',
     bottleSize: '75ml',
     priceETB: 28000,
-    image: '/src/assets/images/perfume_rose_luxury_1794041990276.jpg',
+    image: IMAGES.perfumeRoseLuxury,
     description:
       'A velvet-smooth rose elixir layered with amber, incense, and tender Turkish rose petals.',
     descriptionAm:
@@ -85,7 +86,7 @@ export const initialProducts: FragranceProduct[] = [
     category: 'designer',
     bottleSize: '60ml',
     priceETB: 18500,
-    image: '/src/assets/images/collection_designer_1794041957272.jpg',
+    image: IMAGES.collectionDesigner,
     description:
       'An extraordinarily concentrated fragrance steeped in the iconic freshness of Sauvage with an intoxicating heart of spices.',
     descriptionAm:
@@ -104,7 +105,7 @@ export const initialProducts: FragranceProduct[] = [
     category: 'niche',
     bottleSize: '70ml',
     priceETB: 26500,
-    image: '/src/assets/images/collection_niche_1794041958178.jpg',
+    image: IMAGES.collectionNiche,
     description:
       'Dress in your finest attire and polish your look. Lose yourself in an endless night in a bustling Paris bathed in gold.',
     descriptionAm:
@@ -123,7 +124,7 @@ export const initialProducts: FragranceProduct[] = [
     category: 'designer',
     bottleSize: '100ml',
     priceETB: 24000,
-    image: '/src/assets/images/hero_luxury_perfume_1794041956636.jpg',
+    image: IMAGES.heroLuxuryPerfume,
     description:
       'Rare oud wood, sandalwood, Chinese pepper, rosewood, and amber create a smoky, incense-filled temple atmosphere.',
     descriptionAm:
@@ -142,7 +143,7 @@ export const initialProducts: FragranceProduct[] = [
     category: 'arabic',
     bottleSize: '75ml',
     priceETB: 6500,
-    image: '/src/assets/images/collection_arabic_1794041958483.jpg',
+    image: IMAGES.collectionArabic,
     description:
       'An oriental gourmand oud fragrance that surrounds your passionate heart with the incomparable beauty of rich golden agarwood.',
     descriptionAm:

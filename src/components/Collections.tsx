@@ -2,6 +2,7 @@ import React from 'react';
 import { FragranceCategory, Language } from '../types';
 import { translations } from '../data/translations';
 import { ArrowRight } from 'lucide-react';
+import { IMAGES } from '../assets/images';
 
 interface CollectionsProps {
   lang: Language;
@@ -16,28 +17,28 @@ export const Collections: React.FC<CollectionsProps> = ({ lang, onSelectCategory
       id: 'designer' as FragranceCategory,
       title: t.collections.designer,
       description: t.collections.designerDesc,
-      image: '/src/assets/images/collection_designer_1794041957272.jpg',
+      image: IMAGES.collectionDesigner,
       badge: 'Iconic Houses',
     },
     {
       id: 'niche' as FragranceCategory,
       title: t.collections.niche,
       description: t.collections.nicheDesc,
-      image: '/src/assets/images/collection_niche_1794041958178.jpg',
+      image: IMAGES.collectionNiche,
       badge: 'Artisanal & Rare',
     },
     {
       id: 'arabic' as FragranceCategory,
       title: t.collections.arabic,
       description: t.collections.arabicDesc,
-      image: '/src/assets/images/collection_arabic_1794041958483.jpg',
+      image: IMAGES.collectionArabic,
       badge: 'Oud & Amber',
     },
     {
       id: 'luxury' as FragranceCategory,
       title: t.collections.luxury,
       description: t.collections.luxuryDesc,
-      image: '/src/assets/images/editorial_craft_1794041957745.jpg',
+      image: IMAGES.editorialCraft,
       badge: 'Extraits & Elixirs',
     },
   ];
